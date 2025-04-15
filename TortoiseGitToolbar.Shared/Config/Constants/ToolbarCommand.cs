@@ -21,6 +21,7 @@
         RebaseContinue = 0x8117,
         FileLog = 0x8118,
         FileBlame = 0x8119,
-        FileDiff = 0x8120
+        FileDiff = 0x8120,
+		CreateBranch = 0x8121
     }
 }

@@ -165,11 +165,18 @@
 					<ButtonText>File Diff</ButtonText>
 				</Strings>
 			</Button>
+      <Button guid="guidTortoiseGitToolbarCmdSet" id="cmdCreateBranch" priority="0x0121" type="Button">
+        <Parent guid="guidTortoiseGitToolbarCmdSet" id="ToolbarGroup" />
+        <Icon guid="guidImages" id="iconCreateBranch" />
+        <Strings>
+          <ButtonText>Create Branch</ButtonText>
+        </Strings>
+      </Button>
 
 		</Buttons>
 
 		<Bitmaps>
-			<Bitmap guid="guidImages" href="..\Toolbar.png" usedList="iconBash, iconCleanup, iconCommit, iconFetch, iconLog, iconMerge, iconPull, iconPush, iconRebase, iconResolve, iconRevert, iconStashPop, iconStashSave, iconStashList, iconSwitch, iconSync, iconRebaseContinue, iconFileLog, iconFileBlame, iconFileDiff"/>
+			<Bitmap guid="guidImages" href="..\Toolbar.png" usedList="iconBash, iconCleanup, iconCommit, iconFetch, iconLog, iconMerge, iconPull, iconPush, iconRebase, iconResolve, iconRevert, iconStashPop, iconStashSave, iconStashList, iconSwitch, iconSync, iconRebaseContinue, iconFileLog, iconFileBlame, iconFileDiff, iconCreateBranch"/>
 		</Bitmaps>
 
 	</Commands>
@@ -239,6 +246,9 @@
 
 		<KeyBinding guid="guidTortoiseGitToolbarCmdSet" id="cmdFileDiff" key1="G" mod1="Control Shift Alt" key2="D" mod2="Control Shift Alt" editor="guidVSStd97" />
 		<KeyBinding guid="guidTortoiseGitToolbarCmdSet" id="cmdFileDiff" key1="G" mod1="Control Shift Alt" key2="D" editor="guidVSStd97" />
+
+    <KeyBinding guid="guidTortoiseGitToolbarCmdSet" id="cmdCreateBranch" key1="G" mod1="Control Shift Alt" key2="x" mod2="Control Shift Alt" editor="guidVSStd97" />
+    <KeyBinding guid="guidTortoiseGitToolbarCmdSet" id="cmdCreateBranch" key1="G" mod1="Control Shift Alt" key2="x" editor="guidVSStd97" />
 	</KeyBindings>
 
 	<Symbols>
@@ -265,6 +275,7 @@
 			<IDSymbol name="cmdFileLog" value="0x8118" />
 			<IDSymbol name="cmdFileBlame" value="0x8119" />
 			<IDSymbol name="cmdFileDiff" value="0x8120" />
+      <IDSymbol name="cmdCreateBranch" value="0x8121" />
 			<IDSymbol name="Toolbar" value="0x1000" />
 			<IDSymbol name="ToolbarGroup" value="0x1050" />
 		</GuidSymbol>
@@ -289,6 +300,7 @@
 			<IDSymbol name="iconFileLog" value="18" />
 			<IDSymbol name="iconFileBlame" value="19" />
 			<IDSymbol name="iconFileDiff" value="20" />
+			<IDSymbol name="iconCreateBranch" value="21" />
 		</GuidSymbol>
 	</Symbols>
 </CommandTable>
