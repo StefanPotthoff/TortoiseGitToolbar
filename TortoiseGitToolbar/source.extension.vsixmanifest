@@ -5,7 +5,7 @@
         <DisplayName>TortoiseGit Toolbar</DisplayName>
         <Description xml:space="preserve">Lightweight toolbar for launching commonly used TortoiseGit functionality from within Visual Studio.</Description>
         <MoreInfo>https://github.com/MattDavies/TortoiseGitToolbar</MoreInfo>
-        <License>LICENSE.txt</License>
+        
     </Metadata>
     <Installation InstalledByMsi="false">
         <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.Pro">
@@ -19,11 +19,12 @@
         </InstallationTarget>
     </Installation>
     <Dependencies>
-        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.8,)" />
         <Dependency Id="Microsoft.VisualStudio.MPF" DisplayName="Visual Studio MPF" d:Source="Installed" Version="[11.0,)" />
     </Dependencies>
     <Content>
-        <VsPackage>|%CurrentProject%;PkgdefProjectOutputGroup|</VsPackage>
+        <!-- <VsPackage>|%CurrentProject%;PkgdefProjectOutputGroup|</VsPackage> -->
+        <Asset Type="Microsoft.VisualStudio.VsPackage" Path="MattDavies.TortoiseGitToolbar.dll" />
     </Content>
     <Prerequisites>
         <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[11.0,18.0)" DisplayName="Visual Studio core editor" />
